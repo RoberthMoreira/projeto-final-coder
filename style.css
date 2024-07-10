@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+.logo-img {
+    width: 100px;
+}
+
+.header {
+    background-color:#3A3737;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom: 8px solid #FFD600;
+    font-family: "Rubik";
+
+}
+.menu-list {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+
+
+.menu-list-item {
+    color: white;
+    text-decoration: none;
+}
+
+.seção1 {
+    color:#3A3737;
+    padding:60px;
+    font-size: 24px;
+    background-image:url(Seção\ 1.png);
+    background-size:cover;
+    padding-bottom: 150px;
+    font-family:"Rubik";
+}
+
+
+.btn {
+    padding: 10px 15px; 
+    width: 180px;
+    background: #FFD600;
+    border-radius: 9px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 30px 0px;
+    transition: background 1s;
+}
+.logowhats {
+    width: 15px;
+    align-items: center;
+}
+.btn:hover{
+    background: rgb(240, 235, 209);
+}
+
+.seção2{
+    font-family: "Rubik";
+    background-color: darkgrey;
+}
+
+.quemsomos {
+    padding: 28px;    
+}
+
+.quemsomos2 {
+    margin: 45px;
+    font-weight: 50;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 28px;
+    padding: 28px;
+    margin: 28px;
+    border: 7px solid #FFD600;
+    width: 281px; 
+    background-color: grey;
+}
+.card h2 {
+    color: azure;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.imagem {
+   float: none ;
+   flex-shrink: 0; 
+   max-width: 110px;
+   max-height: 122px;
+}
+
+.Cartão {
+    border-radius: 28px;
+    padding: 28px;
+    margin: 28px;
+    border: 7px solid #FFD600;
+    width: 281px; 
+    height: 387px;
+    background-color: white;
+}
+.seção3{
+    font-family: "Rubik";
+    background-color:#FFD600;
+}
+.Serviços {
+    padding: 40px;
+}
+.imagem2 {
+    float: none ;
+    flex-shrink: 0; 
+    max-width: 278px;
+    max-height: 196px;
+ }
+
+ .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimentos {
+    float: none ;
+    flex-shrink: 0; 
+    max-width: 278px;
+    max-height: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+ }
+ .seção4{
+    font-family: "Rubik";
+    background-color:rgb(218, 218, 218);
+}
+ 
+.Avaliação {
+    padding: 30px;
+}
+.nota {
+    padding: 20px;
+}
+.seção5{
+    font-family: "Rubik";
+    background-color:rgb(75, 75, 75);
+    color: aliceblue;
+}
+.marcas {
+    padding: 30px;
+    
+}
+
+.marcasimagem {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.mapa {
+  width: 1000px;  
+}
+
+.seção7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 50px;
+    
+}
+
+.logos {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.seção7{
+    font-family: "Rubik";
+    background-color:rgb(49, 49, 49);
+    color: aliceblue;
+}
+
+.seção8{
+    font-family: "Rubik";
+    background-color: rgb(224, 216, 216);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+
+}
+.textoendereço {
+    max-width: 200px;
+}
