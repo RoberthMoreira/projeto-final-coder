@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    border-bottom: 8px solid #FFD600;
+    border-bottom: 8px solid #fcc72b;
     font-family: "Rubik";
 
 }
@@ -38,13 +38,15 @@
     background-size:cover;
     padding-bottom: 150px;
     font-family:"Rubik";
+    
+    
 }
 
 
 .btn {
     padding: 10px 15px; 
     width: 180px;
-    background: #FFD600;
+    background: #fcc72b;
     border-radius: 9px;
     text-align: center;
     user-select: none;
@@ -64,7 +66,8 @@
 
 .seção2{
     font-family: "Rubik";
-    background-color: darkgrey;
+    color: aliceblue;
+    background: linear-gradient(180deg, #737373 0%, #282828 100%);
 }
 
 .quemsomos {
@@ -85,9 +88,8 @@
     border-radius: 28px;
     padding: 28px;
     margin: 28px;
-    border: 7px solid #FFD600;
     width: 281px; 
-    background-color: grey;
+    background: rgba(217, 217, 217, 0.11);
 }
 .card h2 {
     color: azure;
@@ -106,14 +108,29 @@
     border-radius: 28px;
     padding: 28px;
     margin: 28px;
-    border: 7px solid #FFD600;
+    border: 4px solid #B1B1B1;
     width: 281px; 
     height: 387px;
     background-color: white;
 }
+
+.btn2 {
+    padding: 7px 15px; 
+    width: 120px;
+    background: #fcc72b;
+    border-radius: 16px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 30px 0px;
+    transition: background 1s;
+    }
+
 .seção3{
     font-family: "Rubik";
-    background-color:#FFD600;
+    background-color:#fcc72b;
 }
 .Serviços {
     padding: 40px;
@@ -177,21 +194,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
     gap: 50px;
-    
-}
-
-.logos {
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-}
-.seção7{
     font-family: "Rubik";
     background-color:rgb(49, 49, 49);
     color: aliceblue;
+    padding: 60px;
+}
+.btnend {
+    padding: 10px 15px; 
+    width: 180px;
+    background: #fdc313;
+    border-radius: 9px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 30px 0px;
+    transition: background 1s;
+    color: #3A3737;   
+}
+
+.logos {
+        display: flex;
+        width: 30px;
+        gap: 10px;
 }
 
 .seção8{
@@ -201,8 +228,10 @@
     justify-content: center;
     gap: 50px;
     padding: 20px;
-
 }
 .textoendereço {
     max-width: 200px;
+}
+.Endereço { 
+    flex-direction: column;
 }
