@@ -5,25 +5,27 @@
 
 .logo-img {
     width: 100px;
+    padding: 10px;
 }
 
 .header {
     background-color:#3A3737;
-    padding: 10px;
+    margin: 0;
+    border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
     border-bottom: 8px solid #fcc72b;
     font-family: "Rubik";
-    margin-right: auto;
-    margin-left: auto;
 
 }
 .menu-list {
     display: flex;
     gap: 60px;
     list-style: none;
+    padding-inline-start: 0px;
+    
 }
 
 
@@ -31,7 +33,6 @@
     color: white;
     text-decoration: none;
 }
-
 .backgroud {
     background-image:url(../../Imagem/bg\ serviços.png) ;
     background-size:cover;
@@ -43,7 +44,7 @@
 }
 .serviços {
     font-family: "Rubik";
-    color: #E7E7E7;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,12 +162,8 @@
     gap: 30px;
 
 }
-.imagemservicos{
-    margin-right: auto;
-    margin-left: auto;
-    width: 1350px;
-     
-}
+
+    
 .seção8{
     font-family: "Rubik";
     background-color: rgb(224, 216, 216);
@@ -175,3 +172,152 @@
     gap: 50px;
     padding: 20px;
 }
+/*Estlização do menu-mobile*/
+
+
+
+
+
+
+@media screen and (max-width:730px){
+    .header{
+        display: none;
+    }
+}
+
+
+
+/* TABLET DEITADO E TELAS PEQUENAS */
+@media screen and (min-width:769px) and (max-width:1280px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+}
+/* MOBILE DEITADO + TABET EM PÉ*/
+@media screen and (max-width: 768px){
+
+.body{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+    .cardpolimento{
+        border-radius: 28px;
+        padding: 28px;
+        margin: 28px;
+        border: 5px solid #fcc72b;
+        background-color: white;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 260px; 
+        height: 430px;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    .cardlataria{
+        border-radius: 28px;
+        padding: 28px;
+        margin: 28px;
+        border: 5px solid #fcc72b;
+        background-color: white;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 260px; 
+        height: 430px;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+    .cardpintura{
+        border-radius: 28px;
+        padding: 28px;
+        margin: 28px;
+        border: 5px solid #fcc72b;
+        background-color: white;
+        display:flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 260px; 
+        height: 430px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .cardmartelinho{
+        border-radius: 28px;
+        padding: 28px;
+        margin: 28px;
+        border: 5px solid #fcc72b;
+        background-color: white;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        width: 260px; 
+        height: 430px;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    
+    }
+    .imagempolimento {
+        width: 280px;
+    }
+    .btn2 {
+        padding: 7px 15px; 
+        width: 180px;
+        background: #fcc72b;
+        border-radius: 16px;
+        text-align: center;
+        user-select: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bolder;
+        margin: 30px 0px;
+        transition: background 1s;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+        .btn {
+            padding: 7px 15px; 
+            width: 180px;
+            background: #fcc72b;
+            border-radius: 16px;
+            text-align: center;
+            user-select: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bolder;
+            margin: 30px 0px;
+            transition: background 1s;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            }
+
+  .backgroud {
+    background-image:url(../../Imagem/bg\ serviços.png) ;
+    background-size:auto;
+    padding-bottom: 180px;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    
+}          
+}
+

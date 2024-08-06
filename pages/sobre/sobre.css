@@ -1,6 +1,7 @@
 *{
     margin: 0;
     border: 0;
+    
 }
 
 .logo-img {
@@ -29,3 +30,43 @@
     color: white;
     text-decoration: none;
 }
+
+.secao1{
+    font-family: "Rubik", sans-serif;
+    color: aliceblue;
+    padding-bottom: 40px;
+    background: linear-gradient(180deg, #737373 0%, #282828 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height:100vh;
+    padding: 100px;
+}
+.quemsomos {
+    padding: 8px;  
+    font-size: 28px;
+    font-weight:500;
+    margin-top: 40px;
+}
+
+.quemsomos2 {
+    margin: 25px;
+    font-weight: 300;
+    font-size: 15px;
+    margin-right:70px;
+    margin-left: 70px;
+    text-align: center;
+    
+ }
+ .quemsomos3{
+    padding: 7px;
+    
+}
+.quemsomos4{
+    padding: 7px;
+ }
+ .fotofachada{
+    width: 35%;
+ }

@@ -3,13 +3,17 @@
     border: 0;
 }
 
+
+
 .logo-img {
     width: 100px;
+    padding: 10px;
 }
 
 .header {
     background-color:#3A3737;
-    padding: 10px;
+    margin: 0;
+    border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +26,8 @@
     display: flex;
     gap: 60px;
     list-style: none;
+    padding-inline-start: 0px;
+    
 }
 
 
@@ -33,63 +39,111 @@
 .seção1 {
     color:#3A3737;
     padding:60px;
-    font-size: 24px;
+    font-size: 40px;
     background-image:url(Imagem/Seção\ 1.png);
     background-size:cover;
-    padding-bottom: 150px;
+    background-position: center;
     font-family:"Rubik";
-    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: start;
+    height: 100%;
+    justify-content:end;
+    height: 300px;
+}
+.textobanner{
+    margin-left: 35px;
+    font-weight: 200;
+    padding: 3px;
     
 }
 
-
 .btn {
-    padding: 10px 15px; 
+    padding: 15px 22px; 
     width: 180px;
     background: #fcc72b;
-    border-radius: 9px;
+    border-radius: 11px;
     text-align: center;
     user-select: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     cursor: pointer;
     font-size: 14px;
     font-weight: bolder;
     margin: 30px 0px;
     transition: background 1s;
+    margin-left: 35px;
+    
 }
 .logowhats {
-    width: 15px;
+    width: 17px;
     align-items: center;
+    padding:2px;
+    
 }
 .btn:hover{
     background: rgb(240, 235, 209);
 }
 
 .seção2{
-    font-family: "Rubik";
+    font-family: "Rubik", sans-serif;
     color: aliceblue;
+    padding-bottom: 40px;
     background: linear-gradient(180deg, #737373 0%, #282828 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+
 }
 
 .quemsomos {
-    padding: 28px;    
+    padding: 8px;  
+    font-size: 28px;
+    font-weight:500;
+    margin-top: 40px;
 }
 
 .quemsomos2 {
-    margin: 45px;
-    font-weight: 50;
+    margin: 25px;
+    font-weight: 300;
+    font-size: 15px;
+    margin-right:70px;
+    margin-left: 70px;
+    text-align: center;
+}
+.quemsomos3{
+    padding: 7px;
+    
+}
+.quemsomos4{
+    padding: 7px;
+    
 }
 .row {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    flex-wrap: wrap;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 28px;
     padding: 28px;
     margin: 28px;
-    width: 281px; 
+    width: 150px; 
+    height: 150px;
     background: rgba(217, 217, 217, 0.11);
+    
 }
 .card h2 {
     color: azure;
@@ -100,20 +154,102 @@
 .imagem {
    float: none ;
    flex-shrink: 0; 
-   max-width: 110px;
-   max-height: 122px;
+   max-width: 90px;
+   max-height: 100px;
+   padding: 10px;
 }
 
-.Cartão {
+.seção3{
+    font-family: "Rubik";
+    background-color:#fcc72b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.Serviços {
+    padding: 40px;
+}
+.textoservicos{ 
+    font-family: "Rubik";
+    font-size: 28px;
+    font-weight:700;
+    
+}
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Cartãolataria{
     border-radius: 28px;
     padding: 28px;
     margin: 28px;
     border: 4px solid #B1B1B1;
     width: 281px; 
-    height: 387px;
+    height: 420px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.Cartãomartelinho{
+    border-radius: 28px;
+    padding: 28px;
+    margin: 28px;
+    border: 4px solid #B1B1B1;
+    width: 281px; 
+    height: 420px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Cartãopintura{
+    border-radius: 28px;
+    padding: 28px;
+    margin: 28px;
+    border: 4px solid #B1B1B1;
+    width: 281px; 
+    height: 420px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.textocartao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.imagem2 {
+    float: none ;
+    flex-shrink: 0; 
+    max-width: 278px;
+    max-height: 196px;
+    margin-top: 50px;
+ }
+
+.titulocartão{
+    font-size:22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 .btn2 {
     padding: 7px 15px; 
     width: 120px;
@@ -124,72 +260,87 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: bolder;
-    margin: 30px 0px;
+    margin: 50px;
     transition: background 1s;
+    
     }
 
-.seção3{
-    font-family: "Rubik";
-    background-color:#fcc72b;
-}
-.Serviços {
-    padding: 40px;
-}
-.imagem2 {
-    float: none ;
-    flex-shrink: 0; 
-    max-width: 278px;
-    max-height: 196px;
- }
-
- .row2 {
+ .seção4{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    font-family: "Rubik";
+    background-color:rgb(218, 218, 218);
+    flex-wrap: wrap;
+    height: 100%;
+    padding-bottom: 50px;
 }
 
-.depoimentos {
-    float: none ;
-    flex-shrink: 0; 
-    max-width: 278px;
-    max-height: 196px;
+.Avaliação {
+    padding: 30px;  
+}
+.nota {
+    padding: 10px;
+    font-size: 50px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.depoimentosbox1 {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1400px;
  }
- .seção4{
-    font-family: "Rubik";
-    background-color:rgb(218, 218, 218);
-}
  
-.Avaliação {
-    padding: 30px;
-}
-.nota {
-    padding: 20px;
-}
+ .depoimentos1{
+    width: 250px;
+    height: 190px;
+ }
+
 .seção5{
     font-family: "Rubik";
     background-color:rgb(75, 75, 75);
     color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
 }
 .marcas {
     padding: 30px;
-    
+    font-size: 20px;
+    font-weight: 600;
 }
-
+.marcasbox{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 .marcasimagem {
-    width: 80px;
+    width: 60px;
+    gap: 10px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-}
-.mapa {
-  width: 1000px;  
 }
 
+.mapa iframe{
+  width: 100%;
+  height: 250px;
+}
+ 
 .seção7 {
     display: flex;
     align-items: center;
@@ -199,6 +350,8 @@
     background-color:rgb(49, 49, 49);
     color: aliceblue;
     padding: 60px;
+    flex-wrap: wrap;
+    
 }
 .btnend {
     padding: 10px 15px; 
@@ -206,6 +359,9 @@
     background: #fdc313;
     border-radius: 9px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     user-select: none;
     cursor: pointer;
     font-size: 14px;
@@ -216,11 +372,52 @@
 }
 
 .logos {
-        display: flex;
+    
         width: 30px;
-        gap: 10px;
+       
+        
 }
-
+.logosbox{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.textoendereço {
+    max-width: 240px;
+    text-align: center;
+}
+.Endereço { 
+    flex-direction: column;
+    text-align: center;
+}
+.textoendereço{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 300;
+    
+}
+.textohorario{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.textohorarioitem{
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    font-size: 14px;
+    font-weight: 500;
+}
+.Nossoendereço{
+    font-size: 18px;
+    font-weight: 500;
+}
+.funcionamento{
+    font-size: 18px;
+    font-weight: 500; 
+}
 .seção8{
     font-family: "Rubik";
     background-color: rgb(224, 216, 216);
@@ -228,10 +425,62 @@
     justify-content: center;
     gap: 50px;
     padding: 20px;
+    font-size: 12px;
 }
-.textoendereço {
-    max-width: 200px;
+
+
+/* TABLET DEITADO E TELAS PEQUENAS */
+@media screen and (min-width:769px) and (max-width:1280px) {
+   
 }
-.Endereço { 
-    flex-direction: column;
+/* MOBILE DEITADO + TABET EM PÉ*/
+@media screen and (min-width: 480px)  and (max-width: 768px){
+    .seção1 {
+        color:#3A3737;
+        padding:60px;
+        font-size: 35px;
+        background-image:url(Imagem/Seção\ 1.png);
+        background-size:cover;
+        background-position:left;
+        font-family:"Rubik";
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        height: 100%;
+        justify-content:end;
+        height: 300px;
+    }
+    .textobanner{
+        margin-left: 35px;
+        font-weight: 200;
+        padding: 3px;
+        text-align: center;
+        
+    }
+    
+    .btn {
+        padding: 15px 22px; 
+        width: 180px;
+        background: #fcc72b;
+        border-radius: 11px;
+        text-align: center;
+        user-select: none;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bolder;
+        margin: 30px 0px;
+        transition: background 1s;
+        margin-left: 35px;
+        
+    }
+    .logowhats {
+        width: 17px;
+        align-items: center;
+        padding:2px;
+        
+    }
 }
