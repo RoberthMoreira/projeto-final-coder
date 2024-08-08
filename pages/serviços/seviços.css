@@ -5,7 +5,7 @@
 
 .logo-img {
     width: 100px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .header {
@@ -15,23 +15,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 150px;
     border-bottom: 8px solid #fcc72b;
     font-family: "Rubik";
+    padding-inline-start: 40px;
 
 }
 .menu-list {
     display: flex;
-    gap: 60px;
+    gap: 150px;
     list-style: none;
     padding-inline-start: 0px;
-    
+    padding: 25px;
 }
 
 
 .menu-list-item {
     color: white;
     text-decoration: none;
+    
+}
+.menu-list:hover{
+    color: #fcc72b;
+    transition: background .3s;
 }
 .backgroud {
     background-image:url(../../Imagem/bg\ serviços.png) ;
@@ -119,9 +125,6 @@
     transition: background 1s;
     }
 
-.textomartelinho{
-    
-}
 .imagempintura {
     width: 280px;
 }
