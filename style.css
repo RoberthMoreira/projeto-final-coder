@@ -440,11 +440,11 @@
    
 }
 /* MOBILE DEITADO + TABET EM PÉ*/
-@media screen and (min-width: 480px)  and (max-width: 768px){
+@media screen and (min-width: 380px)  and (max-width: 768px){
     .seção1 {
         color:#3A3737;
-        padding:60px;
-        font-size: 35px;
+        padding:20px;
+        font-size: 30px;
         background-image:url(Imagem/Seção\ 1.png);
         background-size:cover;
         background-position:left;
@@ -458,7 +458,7 @@
         height: 300px;
     }
     .textobanner{
-        margin-left: 35px;
+        margin-left:0px;
         font-weight: 200;
         padding: 3px;
         text-align: center;
@@ -480,7 +480,7 @@
         font-weight: bolder;
         margin: 30px 0px;
         transition: background 1s;
-        margin-left: 35px;
+        margin-left: 0px;
         
     }
     .logowhats {

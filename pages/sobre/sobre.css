@@ -41,6 +41,9 @@
     transition: background .3s;
 }
 
+.favicon{
+    width: 150px;
+}
 .secao1{
     font-family: "Rubik", sans-serif;
     color: aliceblue;
