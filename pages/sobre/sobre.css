@@ -1,7 +1,6 @@
 *{
     margin: 0;
     border: 0;
-    
 }
 
 .logo-img {
@@ -30,7 +29,6 @@
     padding: 25px;
 }
 
-
 .menu-list-item {
     color: white;
     text-decoration: none;
@@ -44,43 +42,65 @@
 .favicon{
     width: 150px;
 }
-.secao1{
+.sessao1{
     font-family: "Rubik", sans-serif;
     color: aliceblue;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
     background: linear-gradient(180deg, #737373 0%, #282828 100%);
     display: flex;
-    justify-content: start;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    height:100vh;
-    padding: 100px;
+    padding-top: 120px;
+    height: 100%; 
+    gap: 60px;
 }
+
 .quemsomos {
     padding: 8px;  
     font-size: 28px;
     font-weight:500;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
-
 .quemsomos2 {
-    margin: 25px;
     font-weight: 300;
     font-size: 15px;
-    margin-right:70px;
-    margin-left: 70px;
-    text-align: center;
-    
+    text-align:justify;
+    width: 500px; 
  }
  .quemsomos3{
-    padding: 7px;
-    
+    padding: 5px;
 }
 
 .quemsomos4{
-    padding: 7px;
+    padding: 5px;
+ }
+ .quemsomos5{
+    padding: 5px;
+    margin-bottom: 40px;
  }
  .fotofachada{
-    width: 35%;
+    width: 500px;
+    margin-top: 30px;
+    
  }
+ .favicon{
+    
+    margin-bottom: 20px;
+ }
+ 
+.carousel-inner{
+    margin-top: 50px;
+}
+.seção8{
+    font-family: "Rubik";
+    background-color: rgb(224, 216, 216);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    font-size: 12px;
+    
+}

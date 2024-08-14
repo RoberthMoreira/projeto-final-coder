@@ -39,3 +39,21 @@
     color: #fcc72b;
     transition: background .3s;
 }
+.caixa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto{
+    border-radius: 28px;
+    margin-top: 60px;
+    width: 1500px; 
+    height: 720px;
+    max-width: 1500px;
+    background: linear-gradient(180deg, #737373 0%, #282828 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    
+}
