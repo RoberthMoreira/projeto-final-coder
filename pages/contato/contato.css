@@ -46,14 +46,127 @@
 }
 .texto{
     border-radius: 28px;
-    margin-top: 60px;
-    width: 1500px; 
-    height: 720px;
-    max-width: 1500px;
+    margin-top: 30px;
+    width: 100%; 
+    height: 520px;
+    margin-left: 20px;
+    margin-right: 20px;
     background: linear-gradient(180deg, #737373 0%, #282828 100%);
+   
+    
+}
+.seção7 {
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    gap: 50px;
+    font-family: "Rubik";
+    border-radius: 28px;
+    margin-top: 30px;
+    height: 520px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: linear-gradient(180deg, #737373 0%, #282828 100%);
+    color: aliceblue;
+    padding: 60px;
+    flex-wrap: wrap;
     
+}
+.btnend {
+    padding: 10px 15px; 
+    width: 180px;
+    background: #fdc313;
+    border-radius: 9px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    margin: 30px 0px;
+    transition: background 1s;
+    color: #3A3737;   
+}
+
+.logos {
+        width: 30px;    
+}
+.logosbox{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.textoendereço {
+    max-width: 240px;
+    text-align: center;
+}
+.Endereço { 
+    flex-direction: column;
+    text-align: center;
+}
+.textoendereço{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 300;
+    
+}
+.textohorario{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+.textohorarioitem{
+    display: flex;
+    justify-content: space-between;
+}
+.redes{
+    font-size: 14px;
+    font-weight: 500;
+}
+.Nossoendereço{
+    font-size: 18px;
+    font-weight: 500;
+}
+.funcionamento{
+    font-size: 18px;
+    font-weight: 500; 
+}
+.seção8{
+    font-family: "Rubik";
+    background-color: rgb(224, 216, 216);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+.mapa iframe{
+    width: 100%;
+    height: 380px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /* TABLET DEITADO E TELAS PEQUENAS */
+@media screen and (min-width:769px) and (max-width:2280px) {
+    .seção7 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        font-family: "Rubik";
+        border-radius: 28px;
+        margin-top: 30px;
+        height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: linear-gradient(180deg, #737373 0%, #282828 100%);
+        color: aliceblue;
+        padding: 60px;
+        flex-wrap: wrap;
+        
+    }
 }

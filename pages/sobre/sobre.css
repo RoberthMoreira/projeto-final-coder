@@ -67,7 +67,7 @@
 .quemsomos2 {
     font-weight: 300;
     font-size: 15px;
-    text-align:justify;
+    text-align:left;
     width: 500px; 
  }
  .quemsomos3{
@@ -87,7 +87,6 @@
     
  }
  .favicon{
-    
     margin-bottom: 20px;
  }
  
@@ -103,4 +102,49 @@
     padding: 20px;
     font-size: 12px;
     
+}
+/* TABLET DEITADO E TELAS PEQUENAS */
+@media screen and (min-width:769px) and (max-width:1280px) {
+   
+}
+/* MOBILE DEITADO + TABET EM PÉ*/
+@media screen and (min-width: 380px)  and (max-width: 768px){
+    .sessao1{
+        font-family: "Rubik", sans-serif;
+        color: aliceblue;
+        padding-bottom: 150px;
+        background: linear-gradient(180deg, #737373 0%, #282828 100%);
+        padding-top: 40px;
+        gap: 60px;
+        
+    } 
+    .quemsomos {
+        padding: 8px;  
+        font-size: 28px;
+        font-weight:500;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .quemsomos2 {
+        font-weight: 300;
+        font-size: 15px;
+        text-align:center;
+        margin-left: 150px; 
+        margin-right: 150px;
+        width: 350px;
+       
+     }
+     .fotofachada{
+        width: 350px;
+     }
+     .quemsomos5{
+        padding: 5px;
+     }
+     .quemsomos3{
+        padding: 5px;
+        margin-top: 30px;
+    }
 }
