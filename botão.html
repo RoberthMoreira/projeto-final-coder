@@ -1,0 +1,30 @@
+<header class="header2" id="header2">
+    <div class="logo"><img class="logo-img" src="./Imagem/logo_madrid.png"></div>
+   
+    <nav>
+        
+        <ul class="menu-list2">
+            <div class="fechar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></i></div>
+            <li><a class="menu-list-item2" href="./index.html">HOME</a></li>
+            <li><a class="menu-list-item2" href="./pages/sobre/sobre.html">SOBRE</a></li>
+            <li><a class="menu-list-item2" href="./pages/serviços/serviços.html">SERVIÇOS</a></li>
+            <li><a class="menu-list-item2" href="./pages/contato/contato.html">CONTATO</a></li>
+        </ul>
+    </nav>
+    
+    <div>
+        <div class="overlay-menu"></div>
+    </div>
+    <Div class="btn-abrir-menu">
+        <button onclick="animar()" id="btn-menu">
+            <span class="linha"></span>
+            <span class="linha"></span>
+            <span class="linha"></span>
+        </button>
+        <script>
+            function animar(){
+                const btn = document.getElementById('btn-menu')
+                btn.classList.toggle('ativar')
+            }
+        </script>
+    </Div>

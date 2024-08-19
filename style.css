@@ -1,6 +1,7 @@
 *{
     margin: 0;
     border: 0;
+    
 }
 
 
@@ -64,14 +65,12 @@
 .textobanner{
     margin-left: 35px;
     font-weight: 200;
-    padding: 3px;
-    
+    padding: 3px; 
 }
 
 .btn {
     padding: 15px 22px; 
     width: 180px;
-    background: #fcc72b;
     border-radius: 11px;
     text-align: center;
     user-select: none;
@@ -83,9 +82,23 @@
     font-weight: bolder;
     margin: 30px 0px;
     transition: background 1s;
+    cursor:pointer;
     margin-left: 35px;
-    
+    overflow: hidden;
+    transition: 1s;
+    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417,#fcc72b);
+    background-size: 500% 100%;
+    animation: degrade-btn 3s infinite alternate;
 }
+@keyframes degrade-btn{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
 .logowhats {
     width: 17px;
     align-items: center;
@@ -94,7 +107,9 @@
 }
 .btn:hover{
     background: rgb(240, 235, 209);
+    transform: scale3d(1.1, 1.1, 1)
 }
+
 
 .seção2{
     font-family: "Rubik", sans-serif;
@@ -151,8 +166,9 @@
     margin: 28px;
     width: 150px; 
     height: 150px;
-    background: rgba(217, 217, 217, 0.11);
-    
+    background-image: linear-gradient(95deg,#fdfdfd0c,#ffffff10,#fdfdfd27,#fdfdfd0c);
+    background-size: 500% 100%;
+    animation: degrade-btn 3s infinite alternate;
 }
 .card h2 {
     color: azure;
@@ -208,7 +224,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    overflow: hidden;
+    transition: 0.3s;
+}
+.Cartãolataria:hover{
+    transform: scale3d(1.1, 1.1, 1)
 }
 .Cartãomartelinho{
     border-radius: 28px;
@@ -222,6 +242,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.Cartãomartelinho:hover{
+    transform: scale3d(1.1, 1.1, 1)
 }
 .Cartãopintura{
     border-radius: 28px;
@@ -235,8 +260,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s;
 }
-
+.Cartãopintura:hover{
+    transform: scale3d(1.1, 1.1, 1)
+}
 .textocartao{
     display: flex;
     align-items: center;
@@ -264,7 +293,7 @@
 .btn2 {
     padding: 7px 15px; 
     width: 120px;
-    background: #fcc72b;
+    background-image: linear-gradient(45deg,#FFFF24, #fcc72b,#f9b117,#f95e17,#fcc72b,#f8f400,#f95e17);
     border-radius: 16px;
     text-align: center;
     user-select: none;
@@ -273,8 +302,19 @@
     font-weight: bolder;
     margin: 50px;
     transition: background 1s;
-    
+    background-size: 500% 100%;
+    animation: degrade-btn2 3s infinite alternate;
     }
+
+@keyframes degrade-btn2{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+}
+
 
  .seção4{
     display: flex;
@@ -319,8 +359,12 @@
  .depoimentos1{
     width: 250px;
     height: 190px;
+    overflow: hidden;
+    transition: 0.3s;
  }
-
+ .depoimentos1:hover {
+    transform: scale3d(1.1, 1.1, 1);
+  }
 .seção5{
     font-family: "Rubik";
     background-color:rgb(75, 75, 75);
@@ -386,14 +430,14 @@
     font-weight: bolder;
     margin: 30px 0px;
     transition: background 1s;
-    color: #3A3737;   
-}
+    color: #3A3737;
+    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417);
+    background-size: 500% 100%;
+    animation: degrade-btn 3s infinite alternate;
+}   
 
 .logos {
-    
-        width: 30px;
-       
-        
+        width: 30px;  
 }
 .logosbox{
     display: flex;
@@ -481,8 +525,6 @@ button.ativar .linha:nth-child(2){
     opacity: 0;
 }
 
-
-
 /* TABLET DEITADO E TELAS PEQUENAS */
 @media screen and (min-width:769px) and (max-width:1280px) {
    
@@ -529,7 +571,19 @@ button.ativar .linha:nth-child(2){
         margin: 30px 0px;
         transition: background 1s;
         margin-left: 0px;
-        
+        overflow: hidden;
+        transition: 1s;
+        background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417);
+        background-size: 500% 100%;
+        animation: degrade-btn 3s infinite alternate;
+    }
+    @keyframes degrade-btn{
+        0%{
+            background-position-x: 0%;
+        }
+        100%{
+            background-position-x: 100%;
+        }
     }
     .logowhats {
         width: 17px;

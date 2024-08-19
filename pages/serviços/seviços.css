@@ -71,13 +71,17 @@
     margin-left: auto;
     align-items: start;
     gap: 30px;
-
+    overflow: hidden;
+    transition: 0.3s;
+}
+.cardmartelinho:hover{
+    transform: scale3d(1.1, 1.1, 1)
 }
 .imagemmartelinho {
     width: 280px;
 }
 .btn {
-    padding: 7px 15px; 
+    padding: 10px 15px; 
     width: 180px;
     background: #fcc72b;
     border-radius: 16px;
@@ -88,7 +92,18 @@
     font-weight: bolder;
     margin: 30px 0px;
     transition: background 1s;
+    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417,#fcc72b);
+    background-size: 500% 100%;
+    animation: degrade-btn 3s infinite alternate;
+}
+@keyframes degrade-btn{
+    0%{
+        background-position-x: 0%;
     }
+    100%{
+        background-position-x: 100%;
+    }
+}
  
 .body{
     background-color: #3A3737;
@@ -106,13 +121,17 @@
     margin-left: auto;
     align-items: start;
     gap: 30px;
-
+    overflow: hidden;
+    transition: 0.3s;
+}
+.cardpintura:hover{
+    transform: scale3d(1.1, 1.1, 1)
 }
 .imagemlataria {
     width: 280px;
 }
 .btn2 {
-    padding: 7px 15px; 
+    padding: 10px 15px; 
     width: 180px;
     background: #fcc72b;
     border-radius: 16px;
@@ -123,7 +142,18 @@
     font-weight: bolder;
     margin: 30px 0px;
     transition: background 1s;
+    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417,#fcc72b);
+    background-size: 500% 100%;
+    animation: degrade-btn 2s infinite alternate;
+}
+@keyframes degrade-btn{
+    0%{
+        background-position-x: 0%;
     }
+    100%{
+        background-position-x: 100%;
+    }
+}
 
 .imagempintura {
     width: 280px;
@@ -141,7 +171,11 @@
     margin-left: auto;
     align-items: start;
     gap: 30px;
-
+    overflow: hidden;
+    transition: 0.3s;
+}
+.cardpolimento:hover{
+    transform: scale3d(1.1, 1.1, 1)
 }
 .imagempolimento {
     width: 280px;
@@ -163,9 +197,12 @@
     margin-left: auto;
     align-items: start;
     gap: 30px;
-
+    overflow: hidden;
+    transition: 0.3s;
 }
-
+.cardlataria:hover{
+    transform: scale3d(1.1, 1.1, 1)
+}
     
 .seção8{
     font-family: "Rubik";
