@@ -39,6 +39,19 @@
     color: #fcc72b;
     transition: background .3s;
 }
+
+
+/* menu lateral */
+.menu-lateral{
+    display: none;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    padding: 0 20px;
+    display: none;
+}
 .backgroud {
     background-image:url(../../Imagem/bg\ serviços.png) ;
     background-size:cover;
@@ -358,6 +371,102 @@
     margin-right: auto;
     margin-left: auto;
     
-}          
+}   
+.header {
+    display: none;
+
 }
+.menu-list {
+    display: none;
+    gap: 150px;
+    list-style: none;
+    padding-inline-start: 0px;
+    padding: 25px;
+}
+
+.menu-list-item {
+    color: white;
+    text-decoration: none;
+    display: none;
+    
+}
+.menu-lateral{
+    display:flex;
+}
+nav{
+    height: 70px;
+    background-color:#3A3737;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik";
+}
+
+nav a:hover{
+    background-color: #fdc313;
+    color: #282828;
+}
+nav .home-link{
+    margin-right: auto;
+}
+
+
+.links-container{
+
+flex-direction: column;
+align-items: flex-start;
+
+position: fixed;
+top: 0;
+right: -100%;
+z-index: 10;
+width: 270px;
+background-color: #282828;
+box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
+transition: 0.74s ease-out;
+}
+
+nav a{
+box-sizing: border-box;
+height: auto;
+width: 100%;
+padding: 50px 40px;
+justify-content: flex-end;
+font-size: 20px;
+}
+.open-sidebar-button, .close-sidebar-button{
+display: block;
+padding: 20px;
+}
+#sidebar-active:checked ~ .links-container{
+right: 0;
+}
+#sidebar-active:checked ~ #overlay{
+height: 100%;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9;
+}
+.logo-img{
+margin-right: auto;
+padding-left: 15px;
+}
+}     
 

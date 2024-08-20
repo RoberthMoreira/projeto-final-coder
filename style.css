@@ -33,17 +33,33 @@
     list-style: none;
     padding-inline-start: 0px;
     padding: 25px;
+    height: 100%;
 }
 
 
 .menu-list-item {
     color: white;
     text-decoration: none;
+    height: 100%;
+}
+
+li a:hover{
+    background-color: #fdc313;
+    color: #282828;
+    transition: background .3s;
     
 }
-.menu-list:hover{
-    color: #fcc72b;
-    transition: background .3s;
+
+/* menu lateral */
+.menu-lateral{
+    display: none;
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    padding: 0 20px;
+    display: none;
 }
 
 .seção1 {
@@ -66,6 +82,7 @@
     margin-left: 35px;
     font-weight: 200;
     padding: 3px; 
+    width: 400px;
 }
 
 .btn {
@@ -86,7 +103,8 @@
     margin-left: 35px;
     overflow: hidden;
     transition: 1s;
-    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417,#fcc72b);
+    background-image: linear-gradient(to left,#FFFF24, #fcc72b,#f98417,#fcc72b
+    );
     background-size: 500% 100%;
     animation: degrade-btn 3s infinite alternate;
 }
@@ -107,7 +125,7 @@
 }
 .btn:hover{
     background: rgb(240, 235, 209);
-    transform: scale3d(1.1, 1.1, 1)
+    
 }
 
 
@@ -272,8 +290,6 @@
     justify-content: center;
     text-align: center;
 }
-
-
 .imagem2 {
     float: none ;
     flex-shrink: 0; 
@@ -314,7 +330,6 @@
         background-position-x: 100%;
     }
 }
-
 
  .seção4{
     display: flex;
@@ -509,22 +524,6 @@ button{
     
 }
 
-button.ativar{
-    border:4px solid red;
-}
-
-button.ativar .linha:nth-child(1){
-    transform: translateY(8px) rotate(-45deg);
-    background-color: red;
-}
-button.ativar .linha:nth-child(3){
-    transform: translateY(-8px) rotate(45deg);
-    background-color: red;
-}
-button.ativar .linha:nth-child(2){
-    opacity: 0;
-}
-
 /* TABLET DEITADO E TELAS PEQUENAS */
 @media screen and (min-width:769px) and (max-width:1280px) {
    
@@ -552,6 +551,7 @@ button.ativar .linha:nth-child(2){
         font-weight: 200;
         padding: 3px;
         text-align: center;
+        width: 300px;
         
     }
     
@@ -637,74 +637,82 @@ button.ativar .linha:nth-child(2){
         display: none;
         
     }
-    .header2 {
+    .menu-lateral{
+        display:flex;
+    }
+    nav{
+        height: 70px;
         background-color:#3A3737;
-        margin: 0;
-        border: 0;
         display: flex;
-        justify-content: space-between;
-        border-bottom: 8px solid #fcc72b;
-        font-family: "Rubik";
-        
+        justify-content:flex-end;
+        align-items: center;
     }
-    .menu-list2 {
-        list-style: none;
-        background-color: #282828;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 99999;
-        width: 0%;
-        text-align: right;
-        display: block;
-        padding-inline-start: 0px;
-        padding-top: 23px;
-        transition: 5s;
+    .links-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
-    .header2.abrir-menu{
-        width: 70%;
-    }
-    .header2.abrir-menu ~ .overlay-menu{
-        display: block;
-    }
-    .menu-list-item2 {
-        color: white;
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
         text-decoration: none;
-        font-size: 20px;
-        font-weight: 400; 
-        display: block;        
+        color: white;
+        font-family: "Rubik";
+    }
+    
+    nav a:hover{
+        background-color: #fdc313;
+        color: #282828;
+    }
+    nav .home-link{
+        margin-right: auto;
+    }
+
+
+.links-container{
+    
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    width: 270px;
+    background-color: #282828;
+    box-shadow: -5px 0 5px rgb(0, 0, 0, 0.25);
+    transition: 0.74s ease-out;
 }
 
-li a {
-    padding: 25px ; 
-    display: block; 
-}
-
-
-li a:hover{
-    background-color: #fcc72b;
-    color: #282828;
-}
-.btn-fechar {
-    color: #fcc72b;
-    z-index: 99999;
-}
-.fechar{
-    width: 25px;
-    padding-left: 25px;
-}
-.btn-abrir-menu{
-  padding: 11px;
-}
-.overlay-menu{
-    background-color: #2828289a;
+nav a{
+    box-sizing: border-box;
+    height: auto;
     width: 100%;
+    padding: 50px 40px;
+    justify-content: flex-end;
+    font-size: 20px;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: block;
+    padding: 20px;
+}
+#sidebar-active:checked ~ .links-container{
+    right: 0;
+}
+#sidebar-active:checked ~ #overlay{
     height: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 88888;
-    display: none;
+    z-index: 9;
+}
+.logo-img{
+    margin-right: auto;
+    padding-left: 15px;
 }
 }
