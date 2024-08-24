@@ -112,7 +112,11 @@
         background-position-x: 100%;
     }
 }  
-
+a{
+    text-decoration: none; 
+    color: #282828;
+    
+}
 .logos {
         width: 30px;    
 }

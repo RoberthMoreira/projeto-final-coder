@@ -108,6 +108,12 @@ li a:hover{
     background-size: 500% 100%;
     animation: degrade-btn 3s infinite alternate;
 }
+
+a{
+    text-decoration: none; 
+    color: #282828;
+    
+}
 @keyframes degrade-btn{
     0%{
         background-position-x: 0%;
